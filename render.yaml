@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: crazy-learn
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: MONGO_URI
+        fromEnvVar: MONGO_URI
+      - key: PORT
+        value: 10000
