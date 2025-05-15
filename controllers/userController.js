@@ -13,7 +13,7 @@ exports.createUser = async (req, res) => {
 };
 
 // Get user profile by username
-exports.getUser = async (req, res) => {
+exports.getUserByUsername = async (req, res) => {
   try {
     const user = await User.findOne({ username: req.params.username });
     if (!user) return res.status(404).json({ error: 'User not found' });
@@ -23,7 +23,7 @@ exports.getUser = async (req, res) => {
   }
 };
 
-// Update user profile
+// Update user profile by username
 exports.updateUser = async (req, res) => {
   try {
     const { avatar, bio, animePrefs } = req.body;
@@ -39,7 +39,7 @@ exports.updateUser = async (req, res) => {
   }
 };
 
-// Delete user profile
+// Delete user profile by username
 exports.deleteUser = async (req, res) => {
   try {
     const user = await User.findOneAndDelete({ username: req.params.username });
