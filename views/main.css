@@ -1,0 +1,109 @@
+.landing-page {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.benefits li {
+  background: #1e1e2f;
+  padding: 1rem;
+  border-radius: 12px;
+}
+/*card creater*/
+.create-card {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 25px #00f2ff44;
+}
+/*dashboard crazy*/
+.dashboard-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.dashboard-links a {
+  background: #1a1a2f;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #00f2ff;
+  transition: transform 0.2s;
+}
+
+.dashboard-links a:hover {
+  transform: scale(1.05);
+}
+
+.quiz-section {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.question {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.feedback {
+  margin-top: 1rem;
+  color: #00ff88;
+}
+
+.course-section textarea {
+  height: 150px;
+  background: #111122;
+  resize: vertical;
+}
+
+.editor textarea {
+  width: 100%;
+  height: 100px;
+  font-family: monospace;
+}
+
+#preview {
+  width: 100%;
+  height: 300px;
+  background: white;
+  margin-top: 1rem;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard li {
+  padding: 1rem;
+  background: #1a1a2f;
+  margin: 0.5rem 0;
+  border-radius: 12px;
+}
+
+.my-card {
+  text-align: center;
+}
+
+.my-card img {
+  margin-top: 1rem;
+  max-width: 200px;
+}
+
+.settings form {
+  max-width: 600px;
+  margin: auto;
+}

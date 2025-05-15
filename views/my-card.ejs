@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+
+<section class="my-card" data-aos="zoom-in">
+  <h2><%= user.username %>'s Coder Card</h2>
+  <p><%= user.bio %></p>
+  <p>Favorite Anime: <%= user.anime %></p>
+  <img src="/qr/<%= user.username %>" alt="QR Code" />
+</section>
+
+<%- include('partials/footer') %>

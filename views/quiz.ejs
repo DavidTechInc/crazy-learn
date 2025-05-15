@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<section class="quiz-section" data-aos="fade-up">
+  <h2>Quiz Time</h2>
+  <p class="question"><%= question.text %></p>
+
+  <form action="/quiz/submit" method="POST">
+    <input type="text" name="answer" placeholder="Type your answer..." required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <% if (feedback) { %>
+    <div class="feedback"><%= feedback %></div>
+  <% } %>
+</section>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<section class="leaderboard" data-aos="fade-up">
+  <h2>Leaderboard</h2>
+
+  <ul>
+    <% users.forEach(user => { %>
+      <li>
+        <a href="/card/<%= user.username %>">
+          <%= user.username %> — <%= user.xp %> XP
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+</section>
+
+<%- include('partials/footer') %>

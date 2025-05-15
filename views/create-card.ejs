@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+<section class="create-card" data-aos="zoom-in">
+  <h1>Create Your Coder Card</h1>
+  <form action="/card/preview" method="POST">
+    <label>Username</label>
+    <input type="text" name="username" placeholder="crazyDev42" required />
+
+    <label>Choose Avatar</label>
+    <select name="avatar">
+      <option>Ninja</option>
+      <option>Alien</option>
+      <option>Robot</option>
+    </select>
+
+    <label>Short Bio</label>
+    <textarea name="bio" placeholder="I love coding..."></textarea>
+
+    <label>Favorite Anime</label>
+    <select name="anime">
+      <option>Naruto</option>
+      <option>One Piece</option>
+      <option>Attack of Titan</option>
+    </select>
+
+    <button type="submit" class="cta-button">Generate My Card</button>
+  </form>
+</section>
+
+<%- include('partials/footer') %>

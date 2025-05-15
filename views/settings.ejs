@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+<section class="settings" data-aos="fade-up">
+  <h2>Settings</h2>
+  <form method="POST" action="/settings">
+    <label>Theme</label>
+    <select name="theme">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+
+    <label>Bio</label>
+    <textarea name="bio"><%= user.bio %></textarea>
+
+    <button type="submit">Save Changes</button>
+  </form>
+</section>
+
+<%- include('partials/footer') %>

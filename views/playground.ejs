@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<section class="playground" data-aos="fade-up">
+  <h2>Code Playground</h2>
+
+  <div class="editor">
+    <textarea id="html" placeholder="HTML Code"></textarea>
+    <textarea id="css" placeholder="CSS Code"></textarea>
+    <textarea id="js" placeholder="JavaScript Code"></textarea>
+  </div>
+
+  <button onclick="runCode()">Run</button>
+  <iframe id="preview"></iframe>
+</section>
+
+<script>
+  function runCode() {
+    const html = document.getElementById('html').value;
+    const css = document.getElementById('css').value;
+    const js = document.getElementById('js').value;
+
+    const output = `
+      <html>
+        <style>${css}</style>
+        <body>${html}<script>${js}<\/script></body>
+      </html>`;
+    document.getElementById('preview').srcdoc = output;
+  }
+</script>
+
+<%- include('partials/footer') %>

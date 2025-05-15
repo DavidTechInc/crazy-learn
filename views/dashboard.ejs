@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+
+<section class="dashboard" data-aos="fade-up">
+  <h1>Hello, <%= user.username %></h1>
+
+  <div class="dashboard-links">
+    <a href="/courses">Daily Courses</a>
+    <a href="/quiz">Take a Quiz</a>
+    <a href="/playground">Code Playground</a>
+    <a href="/my-card">My Card</a>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
